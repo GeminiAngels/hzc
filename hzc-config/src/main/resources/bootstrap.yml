@@ -1,0 +1,60 @@
+server:
+  port: 4001
+
+spring:
+  application:
+    name: hzc-config-server
+  profiles:
+    active: prd
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/geminiangels/hzc-config.git
+          default-label: ${spring.profiles.active}   #解决监控down
+
+# 关闭安全管理
+management:
+  security:
+    enabled: false
+endpoints:
+  health:
+    sensitive: false
+---
+spring:
+  profiles: dev
+  rabbitmq:
+    host: 192.168.56.100
+    port: 5672
+    username: admin
+    password: admin
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 20
+  client:
+    serviceUrl:
+      defaultZone: http://hzc:hzc6666@localhost:1025/eureka
+    registry-fetch-interval-seconds: 10
+---
+spring:
+  profiles: prd
+  rabbitmq:
+    host: HZ-E450-SERVER1
+    port: 5672
+    username: admin
+    password: admin
+  cloud:
+    config:
+      retry:
+        initial-interval: 3000
+        multiplier: 1.5
+        max-interval: 20000
+        max-attempts: 6
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://hzc:hzc6666@localhost:1025/eureka

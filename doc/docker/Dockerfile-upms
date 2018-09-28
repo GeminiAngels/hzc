@@ -1,0 +1,8 @@
+FROM java:8-jre
+MAINTAINER HZC baiyun <GeminiAngels@163.com>
+
+ADD ./jar/hzc-upms-service.jar /app/
+ADD ./jar/pinpoint-agent /app/pinpoint-agent
+
+CMD ["java", "-Xmx1000m", "-javaagent:/app/pinpoint-agent/pinpoint-bootstrap-1.5.0.jar", "-Dpinpoint.agentId=hzc-upms-service", "-Dpinpoint.applicationName=HZC-UPMS-SERVICE", "-jar", "/app/hzc-upms-service.jar"]
+

@@ -1,0 +1,7 @@
+FROM java:8-jre
+MAINTAINER HZC baiyun <GeminiAngels@163.com>
+
+ADD ./jar/hzc-eureka.jar /app/
+CMD ["java", "-Xmx200m", "-jar", "/app/hzc-eureka.jar"]
+
+EXPOSE 1025

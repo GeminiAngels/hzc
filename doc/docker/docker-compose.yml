@@ -1,0 +1,46 @@
+version: '2'
+services:
+  hzc-eureka:
+    build:
+      context: ./
+      dockerfile: Dockerfile-eureka
+    restart: always
+    ports:
+      - 1025:1025
+
+  hzc-config:
+    links:
+      - hzc-eureka:eureka
+    build:
+      context: ./
+      dockerfile: Dockerfile-config
+    restart: always
+
+  hzc-gateway:
+    links:
+      - hzc-eureka:eureka
+      - hzc-auth:auth
+    build:
+      context: ./
+      dockerfile: Dockerfile-gateway
+    restart: always
+    ports:
+      - 9999:9999
+
+  hzc-auth:
+    links:
+      - hzc-eureka:eureka
+    build:
+      context: ./
+      dockerfile: Dockerfile-auth
+    restart: always
+    ports:
+      - 3000:3000
+
+  hzc-upms-service:
+    links:
+      - hzc-eureka:eureka
+    build:
+      context: ./
+      dockerfile: Dockerfile-upms
+    restart: always
