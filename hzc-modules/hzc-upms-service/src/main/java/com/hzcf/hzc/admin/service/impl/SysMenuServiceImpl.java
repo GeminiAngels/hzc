@@ -1,5 +1,5 @@
 /*
- *    Copyright (c) 2018-2025, lengleng All rights reserved.
+ *    Copyright (c) 2018-2025, baiyun All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -37,7 +37,7 @@ import java.util.*;
  * 菜单权限表 服务实现类
  * </p>
  *
- * @author lengleng
+ * @author baiyun
  * @since 2017-10-29
  */
 @Service

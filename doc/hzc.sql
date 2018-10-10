@@ -231,7 +231,7 @@ CREATE TABLE `sys_oauth_client_details` (
 --  Records of `sys_oauth_client_details`
 -- ----------------------------
 BEGIN;
-INSERT INTO `sys_oauth_client_details` VALUES ('app', null, 'app', 'server', 'password,refresh_token', null, null, null, null, null, 'true'), ('pig', null, 'pig', 'server', 'password,refresh_token,authorization_code', null, null, null, null, null, 'false');
+INSERT INTO `sys_oauth_client_details` VALUES ('app', null, 'app', 'server', 'password,refresh_token', null, null, null, null, null, 'true'), ('hzc', null, 'hzc', 'server', 'password,refresh_token,authorization_code', null, null, null, null, null, 'false');
 COMMIT;
 
 -- ----------------------------
@@ -316,7 +316,7 @@ CREATE TABLE `sys_user` (
 --  Records of `sys_user`
 -- ----------------------------
 BEGIN;
-INSERT INTO `sys_user` VALUES ('1', 'admin', '$2a$10$vg5QNHhCknAqevx9vM2s5esllJEzF/pa8VZXtFYHhhOhUcCw/GWyS', null, '17034642111', null, '1', '2018-04-20 07:15:18', '2018-05-11 17:12:00', '0'), ('4', 'pig', '$2a$10$vg5QNHhCknAqevx9vM2s5esllJEzF/pa8VZXtFYHhhOhUcCw/GWyS', null, '17034642118', null, '1', '2018-04-22 11:39:07', '2018-05-10 18:01:11', '0');
+INSERT INTO `sys_user` VALUES ('1', 'admin', '$2a$10$vg5QNHhCknAqevx9vM2s5esllJEzF/pa8VZXtFYHhhOhUcCw/GWyS', null, '17034642111', null, '1', '2018-04-20 07:15:18', '2018-05-11 17:12:00', '0'), ('4', 'hzc', '$2a$10$vg5QNHhCknAqevx9vM2s5esllJEzF/pa8VZXtFYHhhOhUcCw/GWyS', null, '17034642118', null, '1', '2018-04-22 11:39:07', '2018-05-10 18:01:11', '0');
 COMMIT;
 
 -- ----------------------------
@@ -359,7 +359,7 @@ CREATE TABLE `sys_zuul_route` (
 --  Records of `sys_zuul_route`
 -- ----------------------------
 BEGIN;
-INSERT INTO `sys_zuul_route` VALUES ('1', 'test', 'test', 'tsest', '1', '1', '1', '0', '2018-05-16 07:28:43', '2018-05-16 07:35:08', '1'), ('2', 'sdfg', 'we', 'jjj', '1', '1', '1', 'jj', '2018-05-16 07:35:43', '2018-05-17 13:56:14', '1'), ('3', '/demo/**', 'pig-demo-service', '', '1', '1', '1', '', '2018-05-17 14:09:06', '2018-05-17 14:32:36', '0'), ('4', '/admin/**', 'pig-upms-service', '', '1', '1', '1', '', '2018-05-21 11:40:38', null, '0'), ('5', '/auth/**', 'pig-auth', '', '1', '1', '1', '', '2018-05-21 11:41:08', null, '0');
+INSERT INTO `sys_zuul_route` VALUES ('1', 'test', 'test', 'tsest', '1', '1', '1', '0', '2018-05-16 07:28:43', '2018-05-16 07:35:08', '1'), ('2', 'sdfg', 'we', 'jjj', '1', '1', '1', 'jj', '2018-05-16 07:35:43', '2018-05-17 13:56:14', '1'), ('3', '/demo/**', 'hzc-demo-service', '', '1', '1', '1', '', '2018-05-17 14:09:06', '2018-05-17 14:32:36', '0'), ('4', '/admin/**', 'hzc-upms-service', '', '1', '1', '1', '', '2018-05-21 11:40:38', null, '0'), ('5', '/auth/**', 'hzc-auth', '', '1', '1', '1', '', '2018-05-21 11:41:08', null, '0');
 COMMIT;
 
 -- ----------------------------

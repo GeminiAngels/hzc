@@ -2,7 +2,7 @@ spring:
   application:
     name: hzc-monitor
   profiles:
-    active: dev
+    active: prd
   cloud:
     config:
       fail-fast: true
@@ -32,4 +32,4 @@ eureka:
     prefer-ip-address: true
   client:
     serviceUrl:
-      defaultZone: http://hzc:hzc6666@eureka:1025/eureka
+      defaultZone: http://hzc:hzc6666@localhost:1025/eureka

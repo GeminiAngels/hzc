@@ -1,5 +1,5 @@
 /*
- *    Copyright (c) 2018-2025, lengleng All rights reserved.
+ *    Copyright (c) 2018-2025, baiyun All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -33,7 +33,7 @@ public class HzcAdminApplicationTest {
 	public void testEnvironmentProperties() {
 //		System.out.println(stringEncryptor.encrypt("redis"));
 //		System.out.println(stringEncryptor.encrypt("hzc"));
-		System.out.println(stringEncryptor.encrypt("lengleng"));
+		System.out.println(stringEncryptor.encrypt("baiyun"));
 		System.out.println(stringEncryptor.encrypt("root"));
 //		System.out.println(stringEncryptor.encrypt("g0HJr2Ltrs0k6tJDY6pDI2aVMUCPSWZDTROLcFMs"));
 //		System.out.println(stringEncryptor.encrypt("24760324"));

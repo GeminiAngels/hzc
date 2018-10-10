@@ -1,5 +1,5 @@
 /*
- *    Copyright (c) 2018-2025, lengleng All rights reserved.
+ *    Copyright (c) 2018-2025, baiyun All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -20,7 +20,7 @@ package com.hzcf.hzc.mc.handler;
 import com.hzcf.hzc.common.util.template.MobileMsgTemplate;
 
 /**
- * @author lengleng
+ * @author baiyun
  * @date 2018/1/16
  */
 public interface SmsMessageHandler {

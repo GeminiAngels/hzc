@@ -1,5 +1,5 @@
 /*
- *    Copyright (c) 2018-2025, lengleng All rights reserved.
+ *    Copyright (c) 2018-2025, baiyun All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -25,7 +25,7 @@ import com.hzcf.hzc.common.entity.SysLog;
  * 日志表 服务类
  * </p>
  *
- * @author lengleng
+ * @author baiyun
  * @since 2017-11-20
  */
 public interface SysLogService extends IService<SysLog> {

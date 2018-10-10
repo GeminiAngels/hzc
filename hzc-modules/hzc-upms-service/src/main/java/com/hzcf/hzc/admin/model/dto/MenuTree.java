@@ -1,5 +1,5 @@
 /*
- *    Copyright (c) 2018-2025, lengleng All rights reserved.
+ *    Copyright (c) 2018-2025, baiyun All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -21,7 +21,7 @@ import com.hzcf.hzc.common.vo.MenuVO;
 import lombok.Data;
 
 /**
- * @author lengleng
+ * @author baiyun
  * @date 2017年11月9日23:33:27
  */
 @Data

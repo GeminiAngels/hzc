@@ -1,5 +1,5 @@
 /*
- *    Copyright (c) 2018-2025, lengleng All rights reserved.
+ *    Copyright (c) 2018-2025, baiyun All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.util.Set;
 
 /**
- * @author lengleng
+ * @author baiyun
  * @date 2017/10/31
  */
 @FeignClient(name = "hzc-upms-service", fallback = MenuServiceFallbackImpl.class)

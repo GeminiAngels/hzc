@@ -1,20 +1,3 @@
-/*
- *    Copyright (c) 2018-2025, lengleng All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- * Redistributions of source code must retain the above copyright notice,
- * this list of conditions and the following disclaimer.
- * Redistributions in binary form must reproduce the above copyright
- * notice, this list of conditions and the following disclaimer in the
- * documentation and/or other materials provided with the distribution.
- * Neither the name of the pig4cloud.com developer nor the names of its
- * contributors may be used to endorse or promote products derived from
- * this software without specific prior written permission.
- * Author: lengleng (wangiegie@gmail.com)
- */
-
 package com.hzcf.hzc.admin.common.util;
 
 import com.baomidou.mybatisplus.generator.AutoGenerator;
@@ -35,14 +18,14 @@ import java.util.List;
 import java.util.Properties;
 
 /**
- * @author lengleng
+ * @author baiyun
  * @date 2017/10/29
  */
 public class PigResourcesGenerator {
 
 
     public static void main(String[] args) {
-        String outputDir = "/Users/lengleng/work/temp";
+        String outputDir = "/Users/baiyun/work/temp";
         final String viewOutputDir = outputDir + "/view/";
         AutoGenerator mpg = new AutoGenerator();
         // 全局配置
@@ -56,7 +39,7 @@ public class PigResourcesGenerator {
         gc.setBaseResultMap(true);
         // XML columList
         gc.setBaseColumnList(true);
-        gc.setAuthor("lengleng");
+        gc.setAuthor("baiyun");
         mpg.setGlobalConfig(gc);
 
         // 数据源配置
@@ -64,8 +47,8 @@ public class PigResourcesGenerator {
         dsc.setDbType(DbType.MYSQL);
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("lengleng");
-        dsc.setUrl("jdbc:mysql://139.224.200.249:3309/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false");
+        dsc.setPassword("123456");
+        dsc.setUrl("jdbc:mysql://hz-e450-server1:3306/hzcf?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false");
         mpg.setDataSource(dsc);
 
         // 策略配置
